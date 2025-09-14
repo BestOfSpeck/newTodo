@@ -9,6 +9,10 @@ body {
   display: flex;
 }
 
+.d-none {
+  display: none;
+}
+
 header {
   position: absolute;
   bottom: 0;
@@ -82,5 +86,4 @@ header button {
   display: none;
   background: #141414;
   height: 100vh;
-  z-index: 999;
 }

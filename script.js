@@ -39,6 +39,6 @@ async function render() {
 }
 
 function openEditPopup() {
-  container.style.display = "none";
+  container.classList.add("d-none");
   popupContainer.style.display = "flex";
 }
