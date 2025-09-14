@@ -6,7 +6,7 @@ const loadTemplate = (data, index) => {
         </span>
 
         <button onclick="deleteNote(${index})" class="card-delete-btn">
-          <img src="../img/delete.png">
+          <img src="img/delete.png">
         </button>
        </div>
     `;
