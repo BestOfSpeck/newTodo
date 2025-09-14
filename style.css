@@ -61,8 +61,14 @@ header button {
 .card-delete-btn {
   display: flex;
   justify-content: center;
+  align-items: center;
   border: none;
   border-radius: 50%;
   width: 35px;
   height: 35px;
+}
+
+.card-delete-btn img {
+  height: 28px;
+  width: 28px;
 }
