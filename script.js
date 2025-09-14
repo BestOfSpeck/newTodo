@@ -1,5 +1,6 @@
 let input = document.getElementById("header_input");
 let container = document.getElementById("content_container");
+let popupContainer = document.getElementById("popup_container");
 let dataArray = [];
 
 async function init() {
@@ -35,4 +36,9 @@ async function render() {
   dataArray.forEach((item, index) => {
     container.innerHTML += loadTemplate(item, index);
   });
+}
+
+function openEditPopup() {
+  container.style.display = "none";
+  popupContainer.style.display = "flex";
 }

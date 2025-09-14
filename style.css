@@ -5,6 +5,10 @@ body {
   background: #f2f2f2;
 }
 
+.d-flex {
+  display: flex;
+}
+
 header {
   position: absolute;
   bottom: 0;
@@ -58,7 +62,7 @@ header button {
   color: #f2f2f2;
 }
 
-.card-delete-btn {
+.card-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,9 +70,17 @@ header button {
   border-radius: 50%;
   width: 35px;
   height: 35px;
+  margin-left: 5px;
 }
 
-.card-delete-btn img {
+.card-btn img {
   height: 28px;
   width: 28px;
+}
+
+.popup-container {
+  display: none;
+  background: #141414;
+  height: 100vh;
+  z-index: 999;
 }
