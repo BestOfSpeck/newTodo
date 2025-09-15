@@ -6,7 +6,7 @@ const loadTemplate = (data, index) => {
         </span>
 
           <div class="d-flex">
-             <button onclick="openEditPopup()" class="card-btn">
+             <button onclick="openEditPopup(${index})" class="card-btn">
               <img src="img/edit.png">
             </button>
 

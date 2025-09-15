@@ -38,7 +38,7 @@ async function render() {
   });
 }
 
-function openEditPopup() {
+function openEditPopup(index) {
   container.classList.add("d-none");
   popupContainer.style.display = "flex";
 }
