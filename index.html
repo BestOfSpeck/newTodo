@@ -12,20 +12,26 @@
 
     <!-- popup section to edit note -->
     <div class="container container-edit-todo d-none" id="popup_container">
-      <h2>${name}</h2>
+      <!--
+        <h2>${name}</h2>
       <form action="">
         <input type="datetime-local" id="" placeholder="Datum und Uhrzeit" />
         <input type="time" name="" id="" placeholder="Uhrzeit" />
         <input type="text" name="" id="" placeholder="Zusätzliche Infos" />
-      </form>
+      </form>    
+  -->
     </div>
 
     <header>
-      <input type="text" placeholder="Add ToDo" id="header_input" />
-      <button onclick="saveData()">Save</button>
+      <button onclick="openEditPopup()" type="text" id="header_add_btn">
+        Add ToDo
+      </button>
+      <button onclick="saveData()" id="header_save_btn" class="d-none">
+        Save
+      </button>
     </header>
 
-    <script src="script.js"></script>
     <script src="templates/template.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -22,29 +22,15 @@ header {
   height: 90px;
   width: 100vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-}
-
-header input {
-  height: 60px;
-  width: 250px;
-  margin-left: 10px;
-  outline: none;
-  border: none;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  text-align: center;
-  font-size: 16px;
 }
 
 header button {
   height: 62px;
   width: 150px;
-  margin-right: 10px;
   border: none;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 20px;
   font-size: 16px;
 }
 
@@ -62,7 +48,7 @@ header button {
   padding: 0 10px;
   font-size: 22px;
   background: #565656;
-  border-radius: 10px;
+  border-radius: 20px;
   color: #f2f2f2;
 }
 

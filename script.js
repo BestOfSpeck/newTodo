@@ -1,6 +1,8 @@
-let input = document.getElementById("header_input");
 let container = document.getElementById("content_container");
 let popupContainer = document.getElementById("popup_container");
+let headerAddButton = document.getElementById("header_add_btn");
+let headerSaveButton = document.getElementById("header_save_btn");
+
 let dataArray = [];
 
 async function init() {
@@ -18,11 +20,21 @@ const getData = () => {
 };
 
 async function saveData() {
-  dataArray.push(input.value);
+  let formNameInput = document.getElementById("form_name_input");
+
+  let data = {
+    title: formNameInput.value,
+  };
+
+  dataArray.push(data);
   localStorage.setItem("data", JSON.stringify(dataArray));
 
+  headerSaveButton.classList.add("d-none");
+  headerAddButton.classList.remove("d-none");
+  headerAddButton.style.display = "";
+  popupContainer.style.display = "none";
+  container.classList.remove("d-none");
   await render();
-  input.value = "";
 }
 
 function deleteNote(index) {
@@ -38,7 +50,11 @@ async function render() {
   });
 }
 
-function openEditPopup(index) {
+function openEditPopup() {
   container.classList.add("d-none");
   popupContainer.style.display = "flex";
+  headerAddButton.classList.add("d-none");
+  headerSaveButton.classList.remove("d-none");
+
+  popupContainer.innerHTML = loadEditNoteTemplate();
 }

@@ -2,11 +2,11 @@ const loadTemplate = (data, index) => {
   return `
        <div class="card">
         <span>
-          ${data}
+          ${data.title}
         </span>
 
           <div class="d-flex">
-             <button onclick="openEditPopup(${index})" class="card-btn">
+             <button class="card-btn">
               <img src="img/edit.png">
             </button>
 
@@ -16,4 +16,16 @@ const loadTemplate = (data, index) => {
           </div>
        </div>
     `;
+};
+
+const loadEditNoteTemplate = () => {
+  return `
+      <form action="">
+
+        <input type="text" id="form_name_input" placeholder="Name" />
+        <input type="datetime-local" id="" placeholder="Datum und Uhrzeit" />
+        <input type="time" name="" id="" placeholder="Uhrzeit" />
+        <input type="text" name="" id="" placeholder="Zusätzliche Infos" />
+      </form>
+  `;
 };
