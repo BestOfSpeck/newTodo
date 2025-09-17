@@ -21,9 +21,11 @@ const getData = () => {
 
 async function saveData() {
   let formNameInput = document.getElementById("form_name_input");
+  let formDatetimeInput = document.getElementById("form_Datetime_input");
 
   let data = {
     title: formNameInput.value,
+    datetime: formDatetimeInput.value,
   };
 
   dataArray.push(data);
