@@ -4,6 +4,7 @@ body {
   height: 100vh;
   background: url("img/background.jpg");
   object-fit: cover;
+  font-family: roboto;
 }
 
 .d-flex {
@@ -30,17 +31,17 @@ header button {
   height: 62px;
   width: 150px;
   border-radius: 20px;
-  font-size: 16px;
+  font-size: 20px;
   background: rgba(255, 255, 255, 0.02);
-  border-radius: 16px;
+
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2.9px);
   -webkit-backdrop-filter: blur(2.9px);
-  border: 1px solid #ffffff34;
+  border: 1px solid #ffffff98;
   box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.33);
   -webkit-box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.33);
-  color: #f0eeee;
+  color: #232323;
 }
 
 .container {
@@ -57,7 +58,7 @@ header button {
   justify-content: space-between;
   padding: 0 18px;
   font-size: 24px;
-  color: #f0eeee;
+  color: #232323;
   border-radius: 20px;
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.02);
@@ -65,7 +66,7 @@ header button {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2.9px);
   -webkit-backdrop-filter: blur(2.9px);
-  border: 1px solid #ffffff34;
+  border: 1px solid #ffffff98;
   box-shadow: 10px 6px 25px 0px rgba(0, 0, 0, 0.29);
   -webkit-box-shadow: 10px 6px 25px 0px rgba(0, 0, 0, 0.29);
   -moz-box-shadow: 10px 6px 25px 0px rgba(0, 0, 0, 0.29);
