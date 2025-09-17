@@ -29,7 +29,7 @@ header {
 header button {
   height: 62px;
   width: 150px;
-  border: none;
+
   border-radius: 20px;
   font-size: 16px;
 
@@ -38,6 +38,7 @@ header button {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2.9px);
   -webkit-backdrop-filter: blur(2.9px);
+  border: 1px solid #ffffff34;
 
   box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.33);
   -webkit-box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.33);
@@ -69,9 +70,24 @@ header button {
   backdrop-filter: blur(2.9px);
   -webkit-backdrop-filter: blur(2.9px);
 
+  border: 1px solid #ffffff34;
+
   box-shadow: 10px 6px 25px 0px rgba(0, 0, 0, 0.29);
   -webkit-box-shadow: 10px 6px 25px 0px rgba(0, 0, 0, 0.29);
   -moz-box-shadow: 10px 6px 25px 0px rgba(0, 0, 0, 0.29);
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.085),
+    transparent 40%
+  );
+  pointer-events: none;
 }
 
 .card-btn {
