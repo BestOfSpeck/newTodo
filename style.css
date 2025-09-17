@@ -67,9 +67,9 @@ header button {
   backdrop-filter: blur(2.9px);
   -webkit-backdrop-filter: blur(2.9px);
   border: 1px solid #ffffff98;
-  box-shadow: 10px 6px 25px 0px rgba(0, 0, 0, 0.29);
-  -webkit-box-shadow: 10px 6px 25px 0px rgba(0, 0, 0, 0.29);
-  -moz-box-shadow: 10px 6px 25px 0px rgba(0, 0, 0, 0.29);
+  box-shadow: 0 7px 20px 0px rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: 0 7px 20px 0px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 0 7px 20px 0px rgba(0, 0, 0, 0.33);
   position: relative;
 }
 
@@ -110,9 +110,9 @@ header button {
   backdrop-filter: blur(2.9px);
   -webkit-backdrop-filter: blur(2.9px);
   border: 1px solid #ffffff34;
-  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.29) inset;
-  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.29) inset;
-  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.29) inset;
+  box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.29) inset;
+  -webkit-box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.29) inset;
+  -moz-box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.29) inset;
 }
 
 .card-btn img {
