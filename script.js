@@ -10,6 +10,7 @@ async function init() {
 
   if (data) {
     dataArray = JSON.parse(data);
+    console.log(dataArray);
   }
 
   await render();
@@ -22,10 +23,17 @@ const getData = () => {
 async function saveData() {
   let formNameInput = document.getElementById("form_name_input");
   let formDatetimeInput = document.getElementById("form_Datetime_input");
+  let formTimeInput = document.getElementById("form_Time_input");
+  let formInfoInput = document.getElementById("form_info_input");
+
+  const date = new Date(formDatetimeInput.value);
+  let formatedDate = customFormat(date);
 
   let data = {
     title: formNameInput.value,
-    datetime: formDatetimeInput.value,
+    datetime: formatedDate,
+    time: formTimeInput,
+    info: formInfoInput,
   };
 
   dataArray.push(data);
@@ -37,6 +45,16 @@ async function saveData() {
   popupContainer.style.display = "none";
   container.classList.remove("d-none");
   await render();
+}
+
+function customFormat(date) {
+  const day = String(date.getDate()).padStart(2, "0");
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const year = date.getFullYear();
+  const hours = String(date.getHours()).padStart(2, "0");
+  const minutes = String(date.getMinutes()).padStart(2, "0");
+
+  return `${day}.${month}.${year} - ${hours}:${minutes}`;
 }
 
 function deleteNote(index) {
